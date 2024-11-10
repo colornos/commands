@@ -29,3 +29,5 @@ sudo apt-get update
 sudo apt-get install -y python3-dev build-essential libxml2-dev libxslt1-dev zlib1g-dev
 pip install --no-binary :all: docx2txt red-black-tree-mod compressed-rtf svglib langdetect
 pip install -v docx2txt red-black-tree-mod compressed-rtf svglib langdetect
+
+pip install --upgrade --force-reinstall pillow
