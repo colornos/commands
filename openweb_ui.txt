@@ -31,3 +31,6 @@ pip install --no-binary :all: docx2txt red-black-tree-mod compressed-rtf svglib 
 pip install -v docx2txt red-black-tree-mod compressed-rtf svglib langdetect
 
 pip install --upgrade --force-reinstall pillow
+
+#Install ollama
+curl -fsSL https://ollama.com/install.sh | sh
