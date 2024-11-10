@@ -1,0 +1,31 @@
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+sudo apt update
+sudo apt install python3.11 python3.11-venv python3.11-dev
+python3.11 --version
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 2
+sudo update-alternatives --config python3
+
+There are 2 choices for the alternative python3 (providing /usr/bin/python3).
+
+  Selection    Path                Priority   Status
+------------------------------------------------------------
+  0            /usr/bin/python3.12   2         auto mode
+* 1            /usr/bin/python3.11   1         manual mode
+  2            /usr/bin/python3.12   2         manual mode
+
+Press <enter> to keep the current choice[*], or type selection number:
+
+
+python3 --version
+
+
+
+pip install --upgrade pip setuptools wheel
+sudo apt-get update
+sudo apt-get install -y python3-dev build-essential libxml2-dev libxslt1-dev zlib1g-dev
+pip install --no-binary :all: docx2txt red-black-tree-mod compressed-rtf svglib langdetect
+pip install -v docx2txt red-black-tree-mod compressed-rtf svglib langdetect
